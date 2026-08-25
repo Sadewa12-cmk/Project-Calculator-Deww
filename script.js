@@ -14,7 +14,6 @@ function deleteLast() {
 
 function calculateResult() {
   try {
-    // Mengganti semua simbol persen agar bisa dihitung
     let expression = display.value.replace(/%/g, "/100");
     display.value = eval(expression);
   } catch (error) {
